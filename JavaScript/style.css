@@ -1,0 +1,28 @@
+div {
+	width: 100px;
+	height:100px;
+background-color: pink;
+}
+#div2 {
+	background-color: red;
+	width: 100px;
+	height: 200px;
+}
+
+#container {
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+
+#container > div {
+ background-color: yellow;
+ border: 1px solid black;
+ float: left;
+ width: 10%;
+ height: 10%;
+}
+
+#container .child {
+	background-color: pink;
+}

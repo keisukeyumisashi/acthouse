@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>	
+</head>
+<body>
+<div id="traverse2">
+<ul>
+	 <li>太郎</li>
+	 <li>次郎</li>
+	 <li class="saburo">三郎
+	   <ul>
+	    <li>三郎の長男
+	     <ul>
+	       <li class="mago">三郎の孫A</li>
+	     	 <li>三郎の孫B</li>
+	     </ul>	
+	    </li>
+	    <li>三郎の次男</li>
+	   </ul>
+	 </li>
+	 <li>四郎</li>
+	 <li>花子</li>
+</ul>
+<button class="prev" type="button">prev</button>
+<button class="prevAll" type="button">prevAll</button>
+<button class="next" type="button">next</button>
+<button class="nextAll" type="button">nextAll</button>
+<button class="parent" type="button">parent</button>
+<button class="parentAll" type="button">parentAll</button>
+<button class="children" type="button">children</button>
+<button class="siblings" type="button">siblings</button>
+<button class="closest" type="button">closest</button>
+<button class="find" type="button">find</button>
+<button class="mago2" type="button">孫</button>
+<style>
+	.blue_border { border: 1px solid blue; }
+</style>
+
+</div>
+
+<hr>
+<div id="traverse1">
+	<ul>
+		<li>太郎</li>
+		<li>次郎</li>
+		<li>三郎</li>
+		<li>四郎</li>
+		<li>五郎</li>
+	</ul>
+	<button class="first" type="button">最初の要素</button>
+	<button class="last" type="button">最後の要素</button>
+	<button class="eq" type="button">n番目の要素</button>
+</div>
+
+<hr>
+<div id="remove">
+	<ul>
+		<li class="first">太郎</li>
+		<li class="second">次郎</li>
+		<li class="third">三郎</li>
+	</ul>
+	<button id="remove-elem" type="button">削除</button>
+	<button id="empty-elem" type="button">クリーン</button>
+	<button id="clone-elem" type="button">コピー</button>
+</div>
+<hr>
+<div id="add">
+	<ul>
+		<li>次郎</li>
+		<li>三郎</li>
+	</ul>
+	<button id="append" type="button">最後に追加</button>
+	<button id="prepend" type="button">最初に追加</button>
+	<button id="before" type="button">直前に追加</button>
+	<button id="after" type="button">直後に追加</button>
+	<button id="append2" type="button">最後に追加2</button>
+</div>	
+<hr> 
+<div id="form">
+<input type="checkbox" name="chk" value="1">
+ <input type="checkbox" name="chk" value="2">
+ <input type="checkbox" name="chk" value="3">
+ <input type="checkbox" name="chk" value="4">
+ <input type="checkbox" name="chk" value="5">
+ <button class="get-check" type="button">チェックボックス取得</button>
+
+<hr>
+ <input type="text" class="text" value="太郎">
+ <input type="radio" name="radio" value="1">
+ <input type="radio" name="radio" value="2">
+ <input type="radio" name="radio" value="3">
+
+ <button class="get-radio" type="button">ラジオ取得</button>
+	<button class="set-radio" type="button">ラジオ設定</button>
+<hr>
+ 
+	<ul>
+		<li><span>太郎</span></li>
+		<li><span>二郎</span></li>
+		<li><span>花子</span></li>
+	</ul>
+	<button class="get-text" type="button">取得</button>
+	<button class="set-text" type="button">設定</button>
+	<button class="get-value" type="button">テキスト取得</button>
+	<button class="set-value" type="button">テキスト設定</button>
+	
+	
+</div>
+
+<hr>
+<div id="offset-div">
+ <div class="box">
+ 	
+ </div>
+ <button id="offset" type="button">オフセット</button>
+<style>
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: khaki;
+	}
+</style>	
+</div>
+<hr>
+<div id="size">
+	<div id="box">
+		
+	</div>
+	<button id="width" type="button">幅変更</button>
+	<button id="height" type="button">高さ変更</button>
+
+	<style>
+		#box {
+			width: 100px;
+			height: 100px;
+			background-color: limegreen;
+			padding: 5px;
+			border: 1px solid black;
+			margin: 5px;
+		}
+	</style>
+</div>
+<hr>
+<div id="clz">
+	<ul>
+		<li id="taro2">太郎</li>
+		<li id="jiro2">二郎</li>
+		<li id="hanako2">花子</li>
+	</ul>
+	<button id="add-class" type="button">追加</button>
+	<button id="remove-class" type="button">削除</button>
+	<button id="toggle-class" type="button">切り替え</button>
+	<style>
+		.man {background-color: blue;}
+		.woman {background-color: pink;}
+	</style>
+<hr>	
+</div>
+
+<div id="remove">
+	<a href="http://www.yahoo.co.jp" title="yahoo" id="yahoo2">yahoo</a>
+	<a href="http://www.amazon.co.jp" title="amazon" id="amazon2">amazon</a>
+	<button id="remove-attr" type="button">属性削除</button>
+	
+</div>
+
+<div id="is">
+	<div class="man">太郎</div>
+	<div>花子</div>
+	<div>花絵</div>
+	<input type="checkbox" id="chk1">
+	<input type="checkbox" id="chk2">
+	<input type="checkbox" id="chk3">
+	<button id="check-is" type="button">チェック</button>
+</div>
+
+<div id =link>
+	<a href="http://www.yahoo.co.jp" id="yahoo">yahoo</a>
+	<a href="#" id="apple">apple</a>
+	<button id="get-attr" type="button">属性取得</button>
+	<button id="set-attr" type="button">属性設定	</button>
+
+</div>
+
+<div id="form2">
+	<input type="radio" value="値1">値1
+	<input type="radio" value="値2">値2
+	<input type="radio" value="値3">値3
+	<input type="radio" value="値4">値4
+	<input type="radio" value="値5">値5
+	<select name="" id="">
+		<option value="オプション1">オプション1</option>
+		<option value="オプション2">オプション2</option>
+		<option value="オプション3">オプション3</option>
+		<option value="オプション4">オプション4</option>
+		<option value="オプション5">オプション5</option>
+	</select>
+	<button id="check-value" type="button">値チェック</button>
+</div>
+
+<div id="form">
+	<input type="text">
+	<input type="password">
+	<input type="button">
+	<button id="check-form" type="buttom">フォームチェック</button>
+
+</div>
+
+<table style="border: 1px solid black" id="table">
+	<tr>
+		<td>太郎</td>
+		<td></td>
+		<td>三郎</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>マイク</td>
+		<td></td>
+	</tr>
+</table>
+<button id="empty" type="button">emptyチェック</button>
+
+<div id="filter">
+	<ul>
+		<li><span>山田</span>太郎</li>
+		<li>トイレの花子</li>
+		<li><span>鈴木</span>二郎</li>
+		<li>佐藤三郎</li>
+		
+	</ul>
+   <button id="dofilter" type="button">郎がつく人だけ</button>
+   <button id="has" type="button">spanがある人だけ</button>
+</div>
+
+<a href="http://www.yahoo.co.jp">yahoo</a>
+<a href="http://www.apple.co.jp">apple</a>
+<a href="http://www.amazon.co.jp">amazon</a>
+<button id="not" type="button">apple以外</button>
+
+<hr>
+<button id="even" type="button">偶数</button>
+<button id="odd" type="button">奇数</button>
+<button id="nth-child" type="button">三番目を取得</button>
+<button id="span" typf="button">３つおき</button>
+<button id="span2" type="button">3つおき+1</button>
+<button id="alone" type="button">孤独</button>
+<button id="even2" type="button">奇数全部</button>
+<button id="odd2" type="button">偶数全部</button>
+<button id="point" type="button">3つめ</button>
+
+<ul class="list">
+ <li>孤独</li>
+</ul>
+
+<ul class="list">
+
+	<li>りんご</li>
+	<li>いちご</li>
+	<li>メロン</li>
+	<li>マンゴー</li>
+	<li>パイナップル</li>
+	<li>スイカ</li>
+	<li>チェリー</li>
+	<li>ぶどう</li>
+	<li>キウイ</li>
+	<li>もも</li>
+</ul>
+<hr>
+<button id="first" type="button">first</button>
+<button id="first-child" type="button">first-child</button>
+
+<ul id="list3" class="list">
+	<li>太郎</li>
+	<li>二郎</li>
+	<li>花子</li>
+</ul>
+<ul id="list4" class="list">
+	<li>りんご</li>
+	<li>いちご</li>
+	<li>みかん</li>
+</ul>
+
+<hr>
+
+<div id="sazaesan">
+	<div id="grand">
+		<h2>波平</h2>
+		<p>フネ</p>
+		<div id="child">
+			<h2>マスオ</h2>
+			<p>サザエ</p>
+			<p>カツオ</p>
+			<p>ワカメ</p>
+			<div id="grandchild">
+				<p>タラ</p>
+			</div>
+		</div>
+	</div>
+</div>
+<button id="shison" type=button>子孫</button>
+<button id="ko" type=button>子</button>
+<button id="brother" type=button>隣接兄弟</button>
+<button id="all-bro" type=button>一般兄弟</button>
+<hr>
+<div id="div1">
+	<div id="child-div1">
+		<p>div1-p1</p>
+		<p>div1-p2</p>
+</div>
+<div id="child-div2">
+	<div id="child-div1">
+		<p>div2-p1</p>
+		<p>div2-p2</p>
+	</div>
+</div>
+<hr>
+<input type="text" name="cat">
+<input type="text" name="cat-5">
+<input type="text" name="catman">
+<input type="text" name="dog cat horse">
+<input type="text" name="dog">
+<button id="part">部分一致</button>
+<button id="match">単語一致</button>
+<button id="front">前方一致</button>
+<button id="back">後方一致</button>
+
+
+<hr>
+<a href="#" target="_black">ピンク</a>
+<a href="#" target="_self">青</a>
+<a href="#" target="_parent">赤</a>
+<a href="#" target="_top">緑</a>
+<a href="#">紫</a>
+<button id="att_sel">属性セレクター</button>
+<button id="not_equal">!=</button>
+<hr>
+<button id="uni" type="button">*</button>
+<hr>
+<ul id="list2">
+	<li id="taro2">太郎</li>
+	<li id="jiro">二郎</li>
+	<li id="hanako">花子</li>
+	<li id="saburo">三郎</li>
+	<li id="nana">菜々</li>
+</ul>
+<hr>
+ <ul id="list1">
+  <li class="man" id="taro">太郎</li>
+  <li class="man">二郎</li>
+  <li class="woman">花子</li>
+　</ul>
+<hr>
+<h2>見出し１</h2>
+<h2>見出し２</h2>
+<hr>
+<div id="pokke"></div>
+<hr>
+<div id="poket"></div>
+<button id="link" type="button">リンク</button>
+<hr>
+<div id="container"></div>
+<button id="add-link" type="button">リンク追加</button>
+<hr>
+
+<ul>
+	<li>りんご</li>
+	<li>いちご</li>
+	<li>みかん</li>
+</ul>
+<button id="console" type="button">コンソール表示</button>
+<button id="change_color" type="button">色変更</button>
+<hr>
+ <div id="color_div">ここのDIVの枠線を変更します</div>
+ <button id="change_border" type="button">色変更</button>
+ 
+<button id="scroll-top" type="button">スクロール</button>
+
+ <script src="jquery-3.1.1.js"></script>
+ <script src="script.js"></script>	
+</body>
+</html>

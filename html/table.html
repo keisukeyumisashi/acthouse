@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>テーブル</title>
+	<link rel="stylesheet"  href="css/table.css">
+</head>
+  <body>
+    <table>
+    	<caption>テーブルの題名</caption>
+    	<thead>
+    	<tr>
+    		<th>見出し１</th>	
+        <th>見出し２</th>	
+    		<th>見出し３</th>	
+    	</tr>	
+    	</thead>	
+    	<tfoot>
+    	<tr>
+    			<td>1-1</td>
+    			<td>1-2</td>
+    			<td>1-3</td>
+    		</tr>
+    		テーブルの練習
+    	</tfoot>
+    	<tbody>
+    		<tr>
+    			<td colspan="2">1-1</td>
+    			
+    			<td>1-3</td>
+    		</tr>
+    		<tr>
+    			<th rowspan="2" colspan="2">2-1</th>
+    			<td>2-3</td>
+    		</tr>
+    		<tr>
+    			<td>3-3</td>
+    		</tr>
+    	</tbody>
+    </table>
+    <table id="cal">
+    <caption>2016年10月</caption>
+    <colgroup span="1" id="sun"></colgroup>
+    <colgroup span="5" id="weekday"></colgroup>
+    <colgroup span="1" id="sat"></colgroup>
+    <tr>
+    	<td>日</td>
+    	<td>月</td>
+    	<td>火</td>
+    	<td>水</td>
+    	<td>木</td>
+    	<td>金</td>
+    	<td>土</td>
+
+    </tr>
+    	<tr>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td></td>
+    	<td>1</td>
+    	</tr>
+    	<tr>
+    		<td>2</td>
+    		<td>3</td>
+    		<td>4</td>
+    		<td>5</td>
+    		<td>6</td>
+    		<td>7</td>
+    		<td>8</td>
+    	</tr>
+    	<tr>
+    		<td>9</td>
+    		<td>10</td>
+    		<td>11</td>
+    		<td>12</td>
+    		<td>13</td>
+    		<td>14</td>
+    		<td>15</td>
+    	</tr>
+    	<tr>
+    		<td>16</td>
+    		<td>17</td>
+    		<td>18</td>
+    		<td>19</td>
+    		<td>20</td>
+    		<td>21</td>
+    		<td>22</td>
+    	</tr>
+    	<tr></tr>
+    	<td>23</td>
+    	<td>24</td>
+    	<td>25</td>
+    	<td>26</td>
+    	<td>27</td>
+    	<td>28</td>
+    	<td>29</td>
+    	<tr>
+    		<td>30</td>
+    		<td>31</td>
+    	</tr>
+    </table>
+ </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+ <div id="container"></div>
+ <button id="add-child" type="button">子要素追加</button>
+ <button id="add-class" type="button">クラス付きで追加</button>
+ <button id="remove-child" type="button">子要素削除</button>
+ <hr>
+ <button id="deley" type="button">5秒後にアラート</button>
+<div id="div3"></div>
+<button id="interval" type="button">3秒間隔で色変更</button>
+
+<div id="timer"></div>
+<button id="start" type="button">スタート</button>
+<button id="stop" type="button">ストップ</button>
+ <hr> 
+<img src="sirokku.jpg" id="image" />
+<hr>
+<div id="div1"></div>
+<hr>
+<div id="div2"></div>
+<hr>
+<button id="open-self">自画面で開く</button>
+<button id="open-new">別タブで開く</button>
+
+<input type="text" id="from">
+<input type="text" id="to">
+<button id="btn-while">計算</button>
+<hr>
+<p id="array"></p>
+<button id="btn-array" type="button">配列チェック</button>
+
+<hr>
+<input type="text" id="text1">
+<button id="btn1" type="button">値チェック</button>
+<button id="btn2" type="button">値チェック(switch)</button>
+
+<hr>
+<button type="button" id="alert">アラート表示</button>
+<button type="button" id="confirm">確認ダイアログ表示</button>
+<button type="button" id="prompt">入力ダイアログ表示</button>
+
+
+<hr>
+	<p id="p1" class="p">段落１</p>
+	<p id="p2" class="p">段落２</p>
+	<p id="p3">段落3</p>
+	<p id="p4" class="p">ウイスキー</p>
+	<p id="p5" class="p">ラム</p>
+
+	<button type="button" onclick="showP1('引数で文字列変更！','引数で文字列変更２！')">段落１変更</button>
+	<a href="javascript:showP1()">段落１変更</a>
+	<button type="button" onclick="showP4()">ソーダとレモン</button>
+
+  <button type="button" id="change-p1">イベントリスナで変更</button>
+
+  <button type="button" id="change-p5">コーラとレモン</button>
+
+　<script src="script.js"></script>
+</body>
+</html>
