@@ -1,0 +1,1 @@
+{"virtualbox":{"/workspace":{"mount_options":["dmode=777","fmode=777"],"owner":"www-data","group":"www-data","guestpath":"/workspace","hostpath":"/Users/keisukeyumisashi/Desktop/acthouse/workspace","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/keisukeyumisashi/Desktop/acthouse/vagrant","disabled":false,"__vagrantfile":true}}}
